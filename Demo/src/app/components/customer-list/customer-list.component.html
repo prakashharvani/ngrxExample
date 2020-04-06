@@ -1,0 +1,6 @@
+<ul class="todos">
+    <li *ngFor="let cus of customer ; let i = index;">
+        {{cus.name}}
+        <span (click)="removeCustomer(i)" class="crossButton" >x</span>
+    </li>
+</ul>  
